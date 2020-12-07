@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Evamad – Mainpage</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css' rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/icons.css" />
+	<link rel="stylesheet" type="text/css" href="./css/margins.css" />
+
+    <link rel="stylesheet" type="text/css" href="./css/adaptation/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="./css/adaptation/tablet.css" />
+</head>
+<style>
+    header{
+        position: absolute;
+        z-index: 99;
+        width: 100%;
+    }
+    @media screen and (max-width: 767px) {
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            max-width: 100%;
+        }
+        .row {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+
+        h1{
+            font-size: 56px;
+            line-height: 56px;
+        }
+
+    }
+    @media screen and (min-width: 767px) and (max-width: 1023px) {
+        header .container {
+            max-width: 750px;
+
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        header .row {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .main-heading {
+            height: 164px;
+        }
+
+        .main-heading.green .text-shadow {
+            font-size: 164px;
+            line-height: 164px;
+        }
+
+        .main-heading.green h1 {
+            font-size: 96px;
+            line-height: 96px;
+        }
+
+        .main-heading .text-shadow {
+            left: -50px;
+
+            font-size: 164px;
+            line-height: 164px;
+            opacity: 0.05;
+
+            z-index: 0;
+        }
+    }
+</style>
+<header>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="logo">
+				<a href="./index.html">
+					<img src="./img/logo-white.png" />
+				</a>
+            </div>
+            <a href="https://m.me/evamadtattoo" target="_blank" rel="noopener noreferrer">
+                <button class="button button-green">Contact me</button>
+            </a>
+        </div>
+    </div>
+</header>
+<body class="index-mobile">
+    <div id="wrapper">
+        <div class="compare d-none d-lg-block">
+            <div class="compare__image">
+                <img src="./img/white.jpg">
+                <div class="text-layers">
+                    <div>
+                        <div class="menu-block">
+                            <div class="menu-heading">
+                                <div class="text-shadow">Draws</div>
+                                <h1>Draws</h1>
+                            </div>
+                            <div class="menu-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-shadow-rotate">
+                        Draws
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="compare__image compare__overlay">
+                <img src="./img/dark.jpg">
+                <div class="text-layers">
+                    <div class="tattoo-mainpage">
+                        <div class="menu-block">
+                            <div class="menu-heading">
+                                <div class="text-shadow">Tattoos</div>
+                                <h1>Tattoos</h1>
+                            </div>
+                            <div class="menu-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-shadow-rotate">
+                            Tattoos
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-lg-none tattoos-bg">
+            <a href="./tattoos.html" class="big-link">
+                <div class="row h-100">
+                    <div class="col-lg-8 main-block align-self-center">
+                        <div class="main-heading">
+                            <div class="text-shadow">Tattoos</div>
+                            <h1>Tattoos</h1>
+                        </div>
+                        <div class="main-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="container d-lg-none draws-bg">
+            <a href="./draws.html" class="big-link">
+                <div class="row justify-content-end h-100">
+                    <div class="col-lg-8 main-block to-right align-self-center">
+                        <div class="main-heading">
+                            <div class="text-shadow">Draws</div>
+                            <h1>Draws</h1>
+                        </div>
+                        <div class="main-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    let isClicked = false;
+    const container = document.querySelector("body");
+    const image = document.querySelector(".compare__overlay");
+    const width = image.offsetWidth;
+    const height = image.offsetHeight;
+    const slider = document.createElement("div");
+    compare();
+    function compare() {
+      image.parentElement.insertBefore(slider, image);
+
+      container.addEventListener("mousemove", (e)=> {
+        xPos = parseInt(e.pageX);
+        image.style.width = xPos + "px";
+
+        xPercent = parseInt(e.pageX / window.innerWidth * 100);
+        
+        if ($(window).width() >= 1024) {
+            if (xPercent > 90) {
+                window.location.href = 'tattoos.html';
+            } else if (xPercent < 10){
+                window.location.href = 'draws.html';
+            }
+        }
+      });
+    }
+</script>
+</html>

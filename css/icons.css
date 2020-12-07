@@ -1,0 +1,76 @@
+.icon{
+	width: 64px;
+	height: 64px;
+
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon:hover{
+	transition: 0.2s ease;
+	filter: brightness(110%);
+}
+
+
+.icon-18x18{
+	width: 18px;
+	height: 18px;
+}
+.icon-36x36{
+	width: 36px;
+	height: 36px;
+}
+.icon-48x48{
+	width: 48px;
+	height: 48px;
+}
+.icon-64x64{
+	width: 64px;
+	height: 64px;
+}
+
+.icon.phone{
+	background: url(../img/phone.svg);
+}
+.icon.delivery{
+	background: url(../img/delivery.svg);
+}
+.icon.waranty{
+	background: url(../img/warranty.svg);
+}
+.icon.temperature{
+	background: url(../img/temperature.svg);
+}
+.icon.fire{
+	background: url(../img/fire.svg);
+}
+.icon.pressure{
+	background: url(../img/pressure.svg);
+}
+
+
+
+.icon.time{
+	background: url(../img/time.svg);
+}
+.icon.waterheater{
+	background: url(../img/waterheater.svg);
+}
+.icon.knowledge{
+	background: url(../img/knowledge.svg);
+}
+.icon.official{
+	background: url(../img/official.svg);
+}
+.icon.guarantee{
+	background: url(../img/guarantee.svg);
+}
+.icon.personal-info{
+	background: url(../img/personal-info.svg);
+}
+.icon.plus{
+	background: url(../img/plus.svg);
+}
+.icon.minus{
+	background: url(../img/minus.svg);
+}

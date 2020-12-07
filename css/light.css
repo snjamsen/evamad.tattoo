@@ -1,0 +1,45 @@
+body{
+	background: white;
+	color: #000;
+}
+h1, h2, h3, h4, h5, p, a {
+	margin: 0px;
+	color: #202020;
+}
+.button{
+	background: #202020;
+	color: white;
+}
+.main-heading.green .text-shadow{
+	color: #47bf49;
+	opacity: 0.1;
+
+	font-size: 360px;
+}
+.main-heading.green h1{
+	color: #47bf49;
+	font-size: 196px;
+}
+.main-block.to-right{
+	text-align: right;
+}
+.main-block.to-right .main-heading h1{
+	width: 100%;
+	text-align: right;
+}
+.main-block.to-right .main-content{
+	float: right;
+}
+.main-block.to-right .main-content p{
+	text-align: right;
+	float: right;
+	color: #115626;
+}
+
+#scene{
+	z-index: 1;
+}
+
+header .mobile-menu img{
+	filter: invert(0) !important;
+}
